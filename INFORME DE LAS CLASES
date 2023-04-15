@@ -1,0 +1,41 @@
+El programa MVCCalculator consta de cuatro clases: MVCCalculator (la clase principal), CalculatorController, CalculatorModel y CalculatorView, que siguen el patrón de 
+diseño Modelo-Vista-Controlador (MVC).
+MVCCalculator: Es la clase principal del programa y contiene el método "main". En esta clase se crean y se manejan tres objetos: CalculatorView, CalculatorModel 
+y CalculatorController, que representan la vista, el modelo y el controlador respectivamente. Estos objetos son utilizados para establecer la comunicación 
+entre la vista y el modelo.
+
+CalculatorController: Es responsable de interactuar con el usuario en la vista y comunicarse con el modelo para realizar los cálculos necesarios. 
+La clase CalculatorController tiene los siguientes métodos:
+
+)Constructor CalculatorController: Se encarga de establecer la vista y el modelo que se utilizan en el controlador.
+
+2)Método actionPerformed: Maneja el método "ActionPerformed" y el "ActionListener". En este método es donde el usuario interactúa con la interfaz generada,
+y se encarga de validar los datos ingresados por el usuario y realizar los cálculos correspondientes
+
+CalculatorModel: Se encarga de realizar los cálculos necesarios para resolver las operaciones matemáticas solicitadas. La clase CalculatorModel 
+cuenta con los siguientes métodos:
+
+1)Método addTwoNumbers: Toma dos enteros y los suma, almacenando el valor de la suma en una variable llamada "calculationValue", 
+para luego ser mostrado en la interfaz.
+
+2)Método getCalculationValue: Retorna el valor almacenado en la variable "calculationValue" mencionada anteriormente.
+
+CalculatorView: Es responsable de mostrar la interfaz de usuario diseñada para que el usuario interactúe con ella. 
+La clase CalculatorView cuenta con los siguientes métodos:
+
+1)Constructor CalculatorView: Configura la vista y añade los elementos necesarios.
+
+2)Método getFirstNumber: Retorna el valor del primer número ingresado por el usuario.
+
+3)Método getSecondNumber: Retorna el valor del segundo número ingresado por el usuario.
+
+4)Método getCalcSolution: Retorna el valor de la solución calculada como un número entero.
+
+5)Método setCalcSolution: Establece el valor de la solución en la vista de usuario.
+
+6)Método addCalculateListener: Asocia el ActionListener al botón "Calcular" para ejecutar el método actionPerformed del controlador cuando sea presionado, 
+de manera que la operación se realice correctamente.
+
+En resumen, el programa MVCCalculator sigue el patrón de diseño MVC (Modelo-vista-controlador), donde la vista (CalculatorView) muestra la interfaz de usuario, 
+el modelo (CalculatorModel) realiza los cálculos y almacena los resultados, y el controlador (CalculatorController) se encarga de interactuar con el usuario, 
+comunicarse con el modelo y actualizar la vista. Esto permite una separación clara de responsabilidades y facilita la mantenibilidad y escalabilidad del programa.
